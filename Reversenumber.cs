@@ -10,14 +10,14 @@ namespace Day6PracticeProb
     {
         public static void reversenumber()
         {
-			// TODO Auto-generated method stub
-
-			Random sc = new Random();
-
 			//Program to reverse the number
 
+			Random sc = new Random();
+                        int number = sc.Next();
+			
+
 			Console.WriteLine("Enter the number: ");
-			int number = sc.Next();
+			
 
 			int remainder;
 			int reverse = 0;
@@ -32,7 +32,7 @@ namespace Day6PracticeProb
 			Console.WriteLine("Reverse of given number is: " + reverse);
 
 			//Program to reverse the characters
-			string name = "RAJ";
+			string name = "MILAN";
 			int length = name.Length;
 			string rev = "";
 
@@ -40,7 +40,7 @@ namespace Day6PracticeProb
 			{
 				rev = rev + name[i];
 			}
-			Console.WriteLine("Reverse of the given name 'RAJ' is: " + rev);
+			Console.WriteLine("Reverse of the given name 'MILAN' is: " + rev);
 
 		}
 
