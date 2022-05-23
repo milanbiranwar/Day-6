@@ -10,18 +10,24 @@ namespace Day6PracticeProb
     {
 		public static void fibonacciseries()
 		{
-			//To start the series with 0 and 1
-			int a = 0, b = 1;
-			int c;
-			Console.WriteLine("The Value of a & b are: " + a + " & " + b);
 
-			for (int i = 1; i <= 10; i++)
+			int a = 0;
+			int b = 1;
+			int c;
+			Console.WriteLine(a);
+			Console.WriteLine(b);
+
+			for (int i = 0; i < 20; i++)
 			{
 				c = a + b;
-				Console.Write(" " + c);
+				Console.WriteLine(c);
 				a = b;
 				b = c;
 
 			}
-    }	}
-}
+			Console.ReadLine();
+		}
+        }
+    
+    }
+	
