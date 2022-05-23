@@ -10,29 +10,36 @@ namespace Day6PracticeProb
     {
         public static void primenumber()
         {
-			Random Scan = new Random();
+			//for (int number = 0; number <= 100; number++)
+            //{
 
-			int temp = 0; //temporary variable to store the data
+                
+                int number = 7;
+                int count = 0;
 
-			Console.WriteLine("Enter any number to check: ");
-			int number = Scan.Next();
+                for (int i = 0; i < number; i++)
+                {
+                    
+                
+                
+                if (number % i == 0)
+                    {
+                        count++;
+                    }
 
-			for (int i = 2; i <= number - 1; i++)
-			{
-				if (number % i == 0)
-				{
-					temp = temp + 1;
-				}
-				if (temp > 0)
-				{
-					Console.WriteLine("The Given number is not a Prime Number: " + number);
-				}
-				else
-				{
-					Console.WriteLine("The Given number is a Prime Number: " + number);
-				}
-			}
+                }
+                if (count == 2)
+                {
+                    //Console.WriteLine("number");
+                    Console.WriteLine("It is Prime Number");
+                }
+               else
+                {
+                    Console.WriteLine("It is Not a Prime Number");
+                }
+            //}
 
 		}
-	}
+          }	
+    }
 }
