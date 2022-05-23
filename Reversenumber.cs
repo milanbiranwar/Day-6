@@ -10,40 +10,22 @@ namespace Day6PracticeProb
     {
         public static void reversenumber()
         {
-			//Program to reverse the number
+			Console.WriteLine("Enter a number to reverse it");
+            int num=Convert.ToInt32(Console.ReadLine());
+            //int num = 5634;
+            int result = 0;
+            int rem;
 
-			Random sc = new Random();
-                        int number = sc.Next();
-			
+            while (num!=0)
+            {
+                rem = num % 10;
+                result = result*10 + rem;
+                num = num/10;
 
-			Console.WriteLine("Enter the number: ");
-			
-
-			int remainder;
-			int reverse = 0;
-
-			while (number != 0)
-			{
-				remainder = number % 10;
-				reverse = reverse * 10 + remainder;
-				number = number / 10;
-
-			}
-			Console.WriteLine("Reverse of given number is: " + reverse);
-
-			//Program to reverse the characters
-			string name = "MILAN";
-			int length = name.Length;
-			string rev = "";
-
-			for (int i = length - 1; i >= 0; i--)
-			{
-				rev = rev + name[i];
-			}
-			Console.WriteLine("Reverse of the given name 'MILAN' is: " + rev);
-
-		}
+            }
+            Console.WriteLine(result);
+		
 
 	}
-}
+      }
 }
